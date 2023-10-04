@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TbHome } from 'react-icons/tb';
 import NavButton from './buttons/NavButton';
-function Header() {
+export default function Header() {
   return (
     <>
       <div className="static uppercase font-semibold rounded-lg flex md:flex-col md:ml-1 shadow-lg border-gray-600 justify-around md:h-screen md:w-16 fixed w-screen bottom-0">
@@ -42,5 +42,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { TbHome } from 'react-icons/tb';
-import NavButton from './Buttons/navButton';
+import NavButton from './Buttons/Nav';
 export default function Header() {
   return (
     <>

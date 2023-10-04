@@ -1,7 +1,13 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Container from './Container';
 export default function Main() {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+  console.log(isNavbarOpen);
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -15,6 +21,9 @@ export default function Main() {
             data-hs-collapse="#navbar-image-1"
             aria-controls="navbar-image-1"
             aria-label="Toggle navigation"
+            onClick={() => {
+              toggleNavbar();
+            }}
           >
             <svg
               className="hs-collapse-open:hidden w-4 h-4"
@@ -24,7 +33,7 @@ export default function Main() {
               viewBox="0 0 16 16"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
               />
             </svg>
@@ -42,7 +51,9 @@ export default function Main() {
       </div>
       <div
         id="navbar-image-1"
-        className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+        className={`hs-collapse ${
+          isNavbarOpen ? 'block' : 'hidden'
+        } overflow-hidden transition-all duration-300 basis-full grow sm:block`}
       >
         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
           <a

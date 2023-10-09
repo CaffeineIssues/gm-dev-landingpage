@@ -57,7 +57,7 @@ export default function Main() {
       >
         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
           <a
-            className="font-medium text-purple-500"
+            className="font-medium text-white-500"
             href="#"
             aria-current="page"
           >

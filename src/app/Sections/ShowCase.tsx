@@ -6,7 +6,7 @@ export default function ShowCase() {
   return (
     <div className=" h-screen bg-cover bg-[url('/bg.png')]">
       <>
-        <div className="grid grid-cols-2 gap-4 h-screen  ">
+        <div className="grid grid-cols-2 gap-4 h-screen">
           <div className="p-4 flex items-center justify-center">
             <div className="p-4 flex items-center justify-center">
               <div className="grid grid-rows-2 gap-4 justify-center">

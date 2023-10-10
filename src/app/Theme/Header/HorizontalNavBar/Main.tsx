@@ -61,19 +61,19 @@ export default function Main() {
             href="#"
             aria-current="page"
           >
-            Home
+            Início
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             href="#"
           >
-            Work
+            Portfólio
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             href="#"
           >
-            Contact
+            Contato
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"

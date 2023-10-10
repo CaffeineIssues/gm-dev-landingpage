@@ -27,7 +27,7 @@ export default function ShowCase() {
                     className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-sky-500 rounded-lg hover:bg-blue-300 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
                     style={{ marginLeft: '-20%' }}
                   >
-                    Learn more
+                    Saiba Mais
                     <svg
                       className="w-3.5 h-3.5 ml-2"
                       aria-hidden="true"

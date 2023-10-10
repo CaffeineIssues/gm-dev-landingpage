@@ -4,14 +4,15 @@ import Image from 'next/image';
 
 export default function ShowCase() {
   return (
-    <div className=" h-screen bg-cover p-12 bg-[url('/bg.png')]">
+    <div className="h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg.png')]">
       <>
-        <div className="grid grid-cols-2 gap-4 h-screen">
+        <div className="grid grid-cols-2 gap-4 h-screen overflow-hidden">
           <div className="p-4 flex items-center justify-center">
             <div className="p-4 flex items-center justify-center">
-              <div className="grid grid-rows-2 gap-4 justify-center">
-                <div className="p-4 justify-center items-center">
+              <div className="grid grid-rows-2 gap-4 justify-center  overflow-hidden">
+                <div className="p-4 justify-center items-center lg:block hidden">
                   {' '}
+                  {/* Conditional visibility */}{' '}
                   <img src="/logo/white.png" alt="logo" width="80%" />
                 </div>
                 <div className="p-6 flex flex-col items-center justify-center">
@@ -37,9 +38,9 @@ export default function ShowCase() {
                     >
                       <path
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M1 5h12m0 0L9 1m4 4L9 9"
                       />
                     </svg>

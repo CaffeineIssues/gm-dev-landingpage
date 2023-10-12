@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function ShowCase() {
   return (
-    <div className="h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg.png')]">
+    <div className="h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg.png')] rounded-b-3xl">
       <>
         <div className="grid grid-cols-2 gap-4 h-screen overflow-hidden">
           <div className="p-4 flex items-center justify-center">

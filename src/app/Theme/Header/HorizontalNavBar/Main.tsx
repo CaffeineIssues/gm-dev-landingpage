@@ -73,6 +73,12 @@ export default function Main() {
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             href="#"
           >
+            Serviços
+          </a>
+          <a
+            className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
+            href="#"
+          >
             Contato
           </a>
           <a

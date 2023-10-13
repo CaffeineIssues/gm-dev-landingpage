@@ -7,7 +7,7 @@ export default function Services() {
     <Container>
       <>
         <div className="flex items-center ">
-          <h1 className="bg-n-light-purple p-2 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
+          <h1 className="bg-sky-500 p-2 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
             Criamos softwares de complexidades variadas para todos os nichos.
           </h1>
         </div>

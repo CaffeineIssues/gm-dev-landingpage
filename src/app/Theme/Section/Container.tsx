@@ -12,7 +12,7 @@ export default function Container({
     <>
       <div
         className={
-          "h-screen min-h-full bg-cover bg-no-repeat bg-center p-4 bg-[url('/bg-2.png')] rounded-t-3xl"
+          "h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg-2.png')] rounded-t-3xl"
         }
       >
         {children}

@@ -18,8 +18,12 @@ export default function Main() {
       const targetId = targetHref.substring(1);
       const targetDiv = document.getElementById(targetId);
 
-      if (targetDiv) {
-        const centerPosition = targetDiv.offsetTop + targetDiv.clientHeight / 2;
+      if (targetDiv && targetId === 'clients') {
+        const centerPosition =
+          targetDiv.offsetTop - 200 + targetDiv.clientHeight / 2;
+        window.scrollTo({ top: centerPosition, behavior: 'smooth' });
+      } else if (targetDiv) {
+        const centerPosition = targetDiv.offsetTop;
         window.scrollTo({ top: centerPosition, behavior: 'smooth' });
       }
     }
@@ -97,12 +101,14 @@ export default function Main() {
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             href="#contact"
+            onClick={scrollToCenter}
           >
             Contato
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             href="#"
+            onClick={scrollToCenter}
           >
             Blog
           </a>

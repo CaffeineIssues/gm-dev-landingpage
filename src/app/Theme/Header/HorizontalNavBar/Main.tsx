@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import Container from './Container';
 export default function Main() {
@@ -7,7 +7,23 @@ export default function Main() {
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
-  console.log(isNavbarOpen);
+
+  const scrollToCenter = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    // Ensure event.currentTarget and href attribute exist before using them
+    const targetHref = event.currentTarget?.getAttribute('href');
+
+    if (targetHref) {
+      const targetId = targetHref.substring(1);
+      const targetDiv = document.getElementById(targetId);
+
+      if (targetDiv) {
+        const centerPosition = targetDiv.offsetTop + targetDiv.clientHeight / 2;
+        window.scrollTo({ top: centerPosition, behavior: 'smooth' });
+      }
+    }
+  };
   return (
     <Container>
       <div className="flex items-center justify-between">
@@ -58,26 +74,29 @@ export default function Main() {
         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
           <a
             className="font-medium text-white-500"
-            href="#"
+            href="#home"
+            onClick={scrollToCenter}
             aria-current="page"
           >
             Início
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-            href="#"
+            href="#clients"
+            onClick={scrollToCenter}
           >
             Cases de Sucesso
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-            href="#"
+            href="#services"
+            onClick={scrollToCenter}
           >
             Serviços
           </a>
           <a
             className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-            href="#"
+            href="#contact"
           >
             Contato
           </a>

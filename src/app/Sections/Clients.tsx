@@ -50,12 +50,15 @@ export default function Clients() {
   ];
   return (
     <>
-      <div className="flex items-center justify-center bg-n-light-purple pt-8">
-        <h1 className=" text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl dark:text-white">
+      <div
+        id="clients"
+        className="flex items-center justify-center bg-white pt-8"
+      >
+        <h1 className=" text-xl font-extrabold leading-none tracking-tight text-n-dark-purple md:text-5xl lg:text-4xl dark:text-n-dark-purple">
           Cases de Sucesso
         </h1>
       </div>
-      <div className="bg-n-light-purple">
+      <div className="bg-white">
         <div className="parent">
           <Carousel
             responsive={responsive}

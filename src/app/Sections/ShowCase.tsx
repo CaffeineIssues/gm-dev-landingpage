@@ -4,7 +4,10 @@ import Image from 'next/image';
 
 export default function ShowCase() {
   return (
-    <div className="h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg.png')] rounded-b-3xl">
+    <div
+      id="home"
+      className="h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg.png')] rounded-b-3xl"
+    >
       <>
         <div className="grid grid-cols-2 gap-4 h-screen overflow-hidden">
           <div className="p-4 flex items-center justify-center">
@@ -26,7 +29,7 @@ export default function ShowCase() {
                   <a
                     href="#"
                     className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-sky-500 rounded-lg hover:bg-blue-300 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-                    style={{ marginLeft: '-20%' }}
+                    style={{ marginLeft: '-62%' }}
                   >
                     Iniciar meu projeto
                     <svg

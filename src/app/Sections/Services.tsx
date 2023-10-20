@@ -1,13 +1,17 @@
 import React from 'react';
-import Container from '../Theme/Section/Container';
 import Card from '../Theme/Section/Card';
 
 export default function Services() {
   return (
-    <Container>
+    <div
+      id="services"
+      className={
+        "relative h-screen min-h-full bg-cover bg-no-repeat bg-center p-12 bg-[url('/bg-2.png')] rounded-3xl"
+      }
+    >
       <>
         <div className="flex items-center ">
-          <h1 className="bg-sky-500 p-2 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
+          <h1 className="bg-n-light-purple p-2 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
             Criamos softwares de complexidades variadas para todos os nichos.
           </h1>
         </div>
@@ -16,7 +20,7 @@ export default function Services() {
         </p>
         <div className="flex flex-row-reverse">
           <Card>
-            <h2 className="flex items-center bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
+            <h2 className="flex items-center bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl dark:text-white">
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -40,7 +44,7 @@ export default function Services() {
             </p>
           </Card>
           <Card>
-            <h2 className="flex items-center bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
+            <h2 className="flex items-center bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl dark:text-white">
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -67,7 +71,7 @@ export default function Services() {
         </div>
         <div className="flex flex-row-reverse">
           <Card>
-            <h2 className="flex items-center bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-2xl dark:text-white">
+            <h2 className="flex items-center w-full bg-n-light-purple text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-xl dark:text-white">
               <svg
                 className="w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -93,6 +97,6 @@ export default function Services() {
           </Card>
         </div>
       </>
-    </Container>
+    </div>
   );
 }

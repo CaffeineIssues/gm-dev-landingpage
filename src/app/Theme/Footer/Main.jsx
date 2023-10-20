@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
           <div className="w-full flex">
             <div class="w-full text-right px-4">
-              <h4 class="text-3xl fonat-semibold text-blueGray-700">
+              <h4 class="text-3xl font-extrabold fonat-semibold text-blueGray-700">
                 Vamos manter contato!
               </h4>
               <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
